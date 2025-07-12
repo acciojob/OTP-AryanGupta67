@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>OTP Verification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .code-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .code {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <h1 id="verification_heading">Verify Your Account</h1>
+  <p id="verification_subtext">We have sent a 6-digit code to your phone number.</p>
+
+  <div class="code-container">
+    <input type="text" maxlength="1" class="code" id="code-1" />
+    <input type="text" maxlength="1" class="code" id="code-2" />
+    <input type="text" maxlength="1" class="code" id="code-3" />
+    <input type="text" maxlength="1" class="code" id="code-4" />
+    <input type="text" maxlength="1" class="code" id="code-5" />
+    <input type="text" maxlength="1" class="code" id="code-6" />
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
